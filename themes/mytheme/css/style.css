@@ -1,6 +1,6 @@
-body {
-    background-color: pink;
-}
+@import "footer.css";
+@import "header.css";
+@import "responsive.css";
 
 * {
     box-sizing: border-box;
@@ -26,63 +26,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #0d1117;
 }
 
 .main {
     flex: 1 0 auto;
+    width: 60%;
+    margin: auto;
 }
 
 .header, .footer {
     flex: 0 0 auto;
-}
-
-/* Header */
-
-.header, .site-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Title */
-
-.title, .logo {
-    padding: 3em 3em 3em 0;
-}
-
-@media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
-    }
-    .title {
-        min-width: 50%;
-    }
-    .logo {
-        max-width: 30%;
-    }
-}
-
-.title * {
-    color: #111;
-}
-
-.title p {
-    font-style: italic;
-}
-
-/* Footer */
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #222;
-}
-
-.footer a {
-    color: #222;
-}
-
-.footer .social {
-    font-size: 2rem;
 }
 
 /* Typografy */
@@ -90,7 +44,7 @@ body {
 body {
     font-family: sans-serif;
     line-height: 1.5rem;
-    color: #444;
+    color: #f0f6fc;
 }
 
 p, td, th, li, dd {
