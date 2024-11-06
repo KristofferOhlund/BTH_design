@@ -38,3 +38,8 @@
     border-top: 1px solid var(--border-color);
     margin-top: 2rem;
 }
+
+.fa-github {
+    color: var(--text-color);
+
+}
