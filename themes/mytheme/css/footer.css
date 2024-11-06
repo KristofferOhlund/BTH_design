@@ -2,14 +2,23 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-top: 1px solid #222;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .footer a {
     color: #222;
 }
 
-.footer .social {
-    font-size: 2rem;
+.footer .social a{
+     font-size: 2rem;
+}
+
+
+.copyright p {
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }

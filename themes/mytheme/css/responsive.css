@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 650px) {
 
     .title,
     .logo {
@@ -11,5 +11,27 @@
 
     .logo {
         max-width: 30%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+    /* .footer h3,  */
+    /* .footer p,  */
+    /* .footer li,  */
+    /* .footer a { */
+        /* text-align: center; */
+    /* } */
+    .normal-box, 
+    .social, 
+    .copyright{
+        width: 100%;
+        text-align: center;
+    }
+    .normal-box li,
+    .social a {
+        display: flex;
+        justify-content: center;
+        margin: 2%;
     }
 }
