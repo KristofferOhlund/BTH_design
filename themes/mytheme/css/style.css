@@ -2,6 +2,10 @@
 @import "header.css";
 @import "responsive.css";
 
+:root {
+    --dark-color: #0d1117;
+}
+
 * {
     box-sizing: border-box;
     border: 0 none;
@@ -26,7 +30,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #0d1117;
+    background-color: var(--dark-color)
 }
 
 .main {
@@ -75,6 +79,7 @@ code {
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
+    color: var(--dark-color)
 }
 
 pre {
