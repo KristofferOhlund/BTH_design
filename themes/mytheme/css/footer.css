@@ -16,6 +16,18 @@
      font-size: 2rem;
 }
 
+.normal-box,
+.social {
+    width: 50%;
+    text-align: center;
+}
+
+.normal-box li,
+.social a {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
 
 .copyright p {
     text-align: center;
