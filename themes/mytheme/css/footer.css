@@ -18,6 +18,7 @@
 
 .normal-box,
 .social {
+    padding: 2em;
     width: 50%;
     text-align: center;
 }
