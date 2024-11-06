@@ -5,6 +5,7 @@
 :root {
     --dark-color: #0d1117;
     --text-color: #f0f6fc;
+    --border-color: #222;
 }
 
 * {
@@ -39,6 +40,7 @@ body {
     width: 70%;
     margin: auto;
     min-height: 30vh;
+    margin-top: 2rem;
 }
 
 .header, .footer {

@@ -3,8 +3,6 @@
 .footer {
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid #222;
-    margin-top: 2%;
 }
 
 .footer a {
@@ -34,4 +32,9 @@
     width: 100%;
     text-align: center;
     margin-bottom: 2%;
+}
+
+.container {
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
 }
