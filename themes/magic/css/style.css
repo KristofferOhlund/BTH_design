@@ -6421,10 +6421,29 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-:root {
-  --dark-color: #0d1117;
-  --text-color: #f0f6fc;
-  --border-color: #222;
+/* Placement */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+}
+
+.main {
+  flex: 1 0 auto;
+  width: 70%;
+  margin: auto;
+  min-height: 30vh;
+  margin-top: 2rem;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
 }
 
 * {
@@ -6645,52 +6664,6 @@ pre code {
     text-align: center;
   }
 }
-/* Placement */
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--dark-color);
-}
-
-.main {
-  flex: 1 0 auto;
-  width: 70%;
-  margin: auto;
-  min-height: 30vh;
-  margin-top: 2rem;
-}
-
-.article {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.header,
-.footer {
-  flex: 0 0 auto;
-}
-
-* {
-  box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  padding-left: 1.5em;
-}
-
-.hidden {
-  display: none !important;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 /* Typografy */
 body {
   font-family: sans-serif;
@@ -6721,4 +6694,10 @@ h6 {
 
 img {
   max-width: 100%;
+}
+
+:root {
+  --dark-color: #0d1117;
+  --text-color: #f0f6fc;
+  --border-color: #222;
 }

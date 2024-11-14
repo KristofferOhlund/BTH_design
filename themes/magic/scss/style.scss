@@ -4,6 +4,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+@import 'variables';
 @import 'main';
 @import 'blockquotes';
 @import 'code';
@@ -12,15 +13,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'header';
 @import 'mobile-menu';
 @import 'responsive';
-@import 'variables';
-@import 'placement.scss';
+
 @import 'typografy';
 
 
-// :root {
-    // --dark-color: #0d1117;
-    // --text-color: #f0f6fc;
-    // --border-color: #222;
-// }
+:root {
+    --dark-color: #0d1117;
+    --text-color: #f0f6fc;
+    --border-color: #222;
+}
 
 
