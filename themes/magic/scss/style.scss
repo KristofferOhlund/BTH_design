@@ -1,4 +1,9 @@
 @import '../../node_modules/normalize.css/normalize';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
 @import 'blockquotes';
 @import 'code';
 @import 'figures';
@@ -7,7 +12,6 @@
 @import 'mobile-menu';
 @import 'responsive';
 @import 'variables';
-
 
 :root {
     --dark-color: #0d1117;
