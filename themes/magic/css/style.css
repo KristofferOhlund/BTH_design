@@ -6421,6 +6421,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* VARIABLES */
 /* Placement */
 body {
   display: flex;
@@ -6438,7 +6439,7 @@ body {
 
 .article {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 90%;
 }
 
 .header,
@@ -6483,7 +6484,7 @@ code {
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
-  color: #0d1117;
+  color: #222;
 }
 
 pre {
