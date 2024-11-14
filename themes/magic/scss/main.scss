@@ -6,18 +6,21 @@ body {
     background-color: $dark-color;
 }
 
-.main {
-    flex: 1 0 auto;
-    width: 70%;
-    margin: auto;
-    min-height: 30vh;
-    margin-top: 2rem;
+html {
+    font-size: 100%;
 }
 
-.article {
-    margin: 0 auto;
-    max-width: 90%;
+.main {
+    flex: 1 0 auto;
+    width: 64em;
+    margin: 1.96rem auto;
+    min-height: 30vh;
 }
+
+// .article {
+//     margin: 0 auto;
+//     max-width: 90%;
+// }
 
 
 .header,

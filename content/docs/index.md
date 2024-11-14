@@ -4,6 +4,9 @@ Description: Documentation that came with Pico.
 # hidden: true
 ---
 
+Design är en arbetsprocess för att utveckla lösningar på ett medvetet och innovativt sätt där både
+funktionella och estitiska krav ingår med utgångspunkt från användaren och planetens behov. Design används för utveckling av varor, tjänster, processer, budskap och miljöer
+
 ## Welcome to Pico
 
 Congratulations, you have successfully installed [Pico][] %version%.

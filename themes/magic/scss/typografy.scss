@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Typografy */
 
 body {
-    font-family: sans-serif;
+    font-family:"Montserrat", serif;
     line-height: 1.5rem;
     color: $text-color;
 }
+
+// p {
+//     font-size: 1.2em;
+//     line-height: 1.4em;
+//     font-weight: normal;
+//     margin-bottom: 1.68rem;
+// }
 
 p,
 td,
@@ -14,6 +23,10 @@ dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-weight: normal;
+    margin-bottom: 1.96rem;
 }
 
 h1,
@@ -24,7 +37,6 @@ h5,
 h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
-    color: $text-color
 }
 
 img {
