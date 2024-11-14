@@ -1,0 +1,32 @@
+@media (max-width: 650px) {
+
+    .title,
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    /* .footer h3,  */
+    /* .footer p,  */
+    /* .footer li,  */
+    /* .footer a { */
+    /* text-align: center; */
+    /* } */
+    .normal-box,
+    .social,
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+}
