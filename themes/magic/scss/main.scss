@@ -3,7 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-color)
+    background-color: $dark-color;
 }
 
 .main {

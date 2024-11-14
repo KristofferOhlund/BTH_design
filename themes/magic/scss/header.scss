@@ -6,7 +6,7 @@
     justify-content: space-between;
     text-wrap: nowrap;
     height: 13rem;
-    border-bottom: 1px solid var(--border-color)
+    border-bottom: 1px solid $border-color;
 }
 
 /* Title */
@@ -23,7 +23,7 @@
 }
 
 .title * {
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .title p {

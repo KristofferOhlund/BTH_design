@@ -6425,7 +6425,7 @@ readers do not read off random characters that represent icons */
 body {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-color);
+  background-color: #0d1117;
 }
 
 .main {
@@ -6483,7 +6483,7 @@ code {
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
-  color: var(--dark-color);
+  color: #0d1117;
 }
 
 pre {
@@ -6535,7 +6535,7 @@ pre code {
 .social a {
   display: flex;
   justify-content: center;
-  color: var(--text-color);
+  color: #f0f6fc;
 }
 
 .copyright p {
@@ -6546,12 +6546,12 @@ pre code {
 }
 
 .container {
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid #222;
   margin-top: 2rem;
 }
 
 .fa-github {
-  color: var(--text-color);
+  color: #f0f6fc;
 }
 
 /* Header */
@@ -6561,7 +6561,7 @@ pre code {
   justify-content: space-between;
   text-wrap: nowrap;
   height: 13rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #222;
 }
 
 /* Title */
@@ -6577,7 +6577,7 @@ pre code {
 }
 
 .title * {
-  color: var(--text-color);
+  color: #f0f6fc;
 }
 
 .title p {
@@ -6668,7 +6668,7 @@ pre code {
 body {
   font-family: sans-serif;
   line-height: 1.5rem;
-  color: var(--text-color);
+  color: #f0f6fc;
 }
 
 p,
@@ -6689,15 +6689,9 @@ h5,
 h6 {
   margin-bottom: 0.6em;
   font-weight: bold;
-  color: var(--text-color);
+  color: #f0f6fc;
 }
 
 img {
   max-width: 100%;
-}
-
-:root {
-  --dark-color: #0d1117;
-  --text-color: #f0f6fc;
-  --border-color: #222;
 }

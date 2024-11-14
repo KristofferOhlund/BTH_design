@@ -26,7 +26,7 @@
 .social a {
     display: flex;
     justify-content: center;
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .copyright p {
@@ -37,10 +37,10 @@
 }
 
 .container {
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid $border-color;
     margin-top: 2rem;
 }
 
 .fa-github {
-    color: var(--text-color);
+    color: $text-color;
 }
