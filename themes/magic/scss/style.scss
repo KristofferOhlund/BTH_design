@@ -4,6 +4,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+@import 'main';
 @import 'blockquotes';
 @import 'code';
 @import 'figures';
@@ -12,90 +13,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'mobile-menu';
 @import 'responsive';
 @import 'variables';
-
-:root {
-    --dark-color: #0d1117;
-    --text-color: #f0f6fc;
-    --border-color: #222;
-}
-
-* {
-    box-sizing: border-box;
-    border: 0 none;
-    margin: 0;
-    padding: 0;
-}
-
-ol,
-ul {
-    padding-left: 1.5em;
-}
-
-.hidden {
-    display: none !important;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-/* Placement */
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--dark-color)
-}
-
-.main {
-    flex: 1 0 auto;
-    width: 70%;
-    margin: auto;
-    min-height: 30vh;
-    margin-top: 2rem;
-}
-
-.article {
-    margin: 0 auto;
-    max-width: 800px;
-}
+@import 'placement.scss';
+@import 'typografy';
 
 
-.header,
-.footer {
-    flex: 0 0 auto;
-}
+// :root {
+    // --dark-color: #0d1117;
+    // --text-color: #f0f6fc;
+    // --border-color: #222;
+// }
 
-/* Typografy */
 
-body {
-    font-family: sans-serif;
-    line-height: 1.5rem;
-    color: var(--text-color);
-}
-
-p,
-td,
-th,
-li,
-dd {
-    text-align: justify;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 0.6em;
-    font-weight: bold;
-    color: var(--text-color)
-}
-
-img {
-    max-width: 100%;
-}

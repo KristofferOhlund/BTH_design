@@ -6421,6 +6421,33 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+:root {
+  --dark-color: #0d1117;
+  --text-color: #f0f6fc;
+  --border-color: #222;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6437,6 +6464,7 @@ code {
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
+  color: var(--dark-color);
 }
 
 pre {
@@ -6617,33 +6645,6 @@ pre code {
     text-align: center;
   }
 }
-:root {
-  --dark-color: #0d1117;
-  --text-color: #f0f6fc;
-  --border-color: #222;
-}
-
-* {
-  box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  padding-left: 1.5em;
-}
-
-.hidden {
-  display: none !important;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 /* Placement */
 body {
   display: flex;
@@ -6667,6 +6668,27 @@ body {
 .header,
 .footer {
   flex: 0 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 /* Typografy */
