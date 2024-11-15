@@ -1,8 +1,6 @@
 /* Placement */
 
 body {
-    display: flex;
-    flex-direction: column;
     background-color: $dark-color;
 }
 
@@ -12,16 +10,11 @@ html {
 
 .main {
     flex: 1 0 auto;
+    flex-direction: column;
     width: 64em;
     margin: 1.96rem auto;
     min-height: 30vh;
 }
-
-// .article {
-//     margin: 0 auto;
-//     max-width: 90%;
-// }
-
 
 .header,
 .footer {
