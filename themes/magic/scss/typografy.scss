@@ -10,12 +10,16 @@ body {
     
 }
 
-// p {
-//     font-size: 1.2em;
-//     line-height: 1.4em;
-//     font-weight: normal;
-//     margin-bottom: 1.68rem;
-// }
+a {
+    color: $link-color;
+    margin-bottom: 0.5rem;
+}
+
+p, 
+ul,
+ol {
+    margin-bottom: 1.96rem;
+}
 
 p,
 td,
@@ -28,7 +32,7 @@ dd {
     font-size: 1.4em;
     line-height: 1.4em;
     font-weight: normal;
-    margin-bottom: 1.96rem;
+    text-align: left;
 }
 
 h1,

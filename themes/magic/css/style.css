@@ -6676,6 +6676,17 @@ body {
   color: #f0f6fc;
 }
 
+a {
+  color: #4493f8;
+  margin-bottom: 0.5rem;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1.96rem;
+}
+
 p,
 td,
 th,
@@ -6687,7 +6698,7 @@ dd {
   font-size: 1.4em;
   line-height: 1.4em;
   font-weight: normal;
-  margin-bottom: 1.96rem;
+  text-align: left;
 }
 
 h1,
