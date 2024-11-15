@@ -6425,8 +6425,6 @@ readers do not read off random characters that represent icons */
 /* VARIABLES */
 /* Placement */
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #0d1117;
 }
 
@@ -6436,6 +6434,7 @@ html {
 
 .main {
   flex: 1 0 auto;
+  flex-direction: column;
   width: 64em;
   margin: 1.96rem auto;
   min-height: 30vh;
@@ -6611,11 +6610,13 @@ pre code {
 
 @media (max-width: 767px) {
   .header {
-    flex-direction: column;
+    display: contents;
+    border-bottom: 3px solid red;
   }
   .nav ul {
     flex-direction: column;
     padding-bottom: 1em;
+    display: block;
   }
   .nav ul li {
     display: flex;
