@@ -2,30 +2,30 @@
 
 .header,
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    text-wrap: nowrap;
-    height: 13rem;
-    border-bottom: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+  text-wrap: nowrap;
+  height: 13rem;
+  border-bottom: 1px solid $border-color;
 }
 
 /* Title */
 
 .title,
 .logo {
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
 }
 
 .logo {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .title * {
-    color: $text-color;
+  color: $text-color;
 }
 
 .title p {
-    font-style: italic;
+  font-style: italic;
 }

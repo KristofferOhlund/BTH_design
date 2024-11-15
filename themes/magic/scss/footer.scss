@@ -1,46 +1,46 @@
 /* Footer */
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer a {
-    color: #222;
+  color: #222;
 }
 
 .footer .social a {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .normal-box,
 .social {
-    padding-top: 2em;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 2%;
+  padding-top: 2em;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 .normal-box li,
 .normal-box a,
 .social a {
-    display: flex;
-    justify-content: center;
-    color: $text-color;
+  display: flex;
+  justify-content: center;
+  color: $text-color;
 }
 
 .copyright p {
-    text-align: center;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2%;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 .container {
-    border-top: 1px solid $border-color;
-    margin-top: 2rem;
+  border-top: 1px solid $border-color;
+  margin-top: 2rem;
 }
 
 .fa-github {
-    color: $text-color;
+  color: $text-color;
 }

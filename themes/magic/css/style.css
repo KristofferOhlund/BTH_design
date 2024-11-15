@@ -6504,7 +6504,7 @@ pre code {
 
 .figure-left {
   float: right;
-  margin: 0em 2em 1em 2em;
+  margin: 0 2em 1em;
 }
 
 /* Footer */
@@ -6610,13 +6610,12 @@ pre code {
 
 @media (max-width: 767px) {
   .header {
+    flex-direction: column;
     display: contents;
-    border-bottom: 3px solid red;
   }
   .nav ul {
     flex-direction: column;
     padding-bottom: 1em;
-    display: block;
   }
   .nav ul li {
     display: flex;
