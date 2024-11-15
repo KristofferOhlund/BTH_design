@@ -6707,6 +6707,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 1.8em;
   margin-bottom: 0.6em;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
