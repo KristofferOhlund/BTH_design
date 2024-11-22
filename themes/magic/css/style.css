@@ -6716,3 +6716,66 @@ h6 {
 img {
   max-width: 100%;
 }
+
+/* Grid container */
+.landingpage {
+  display: grid;
+  gap: 1em 1em; /* row gap col gap*/
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.landingpage h1, p {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+a, h1 {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.landingpage p {
+  justify-self: left;
+}
+
+.css {
+  grid-column: 1;
+  background-color: #12BC00;
+}
+
+.html,
+.javascript {
+  grid-column: span 2;
+  background-color: #9400FF;
+}
+
+.html {
+  background-color: #A47f00;
+}
+
+.python {
+  grid-column: span 3;
+  order: 1;
+  background-color: #0d106f;
+}
+
+.git {
+  grid-column: span 2;
+  background-color: #b5007f;
+}
+
+.php {
+  background-color: #4493f8;
+}
+
+.sqlite {
+  background-color: #0a48ff;
+}
+
+/*# sourceMappingURL=style.css.map */
