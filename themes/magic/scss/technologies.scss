@@ -1,7 +1,7 @@
 /* Grid container */
 .landingpage {
   display: grid;
-  gap: 1em 1em; /* row gap col gap*/
+  gap: 1em; /* row gap col gap*/
   text-align: center;
   max-width: 960px;
   margin: 0 auto;
@@ -26,7 +26,9 @@
   scale: 1.1;
 }
 
-a, h1 {
+a,
+
+h1 {
   color: $text-color;
   text-decoration: none;
 }
@@ -38,13 +40,13 @@ a, h1 {
 
 .css {
   grid-column: 1;
-  background-color: $css-color
+  background-color: $css-color;
 }
 
 .html,
 .javascript {
   grid-column: span 2;
-  background-color: $js-color
+  background-color: $js-color;
 }
 
 .html {background-color: $html-color;}
@@ -65,12 +67,11 @@ a, h1 {
 }
 
 .sqlite {
-  background-color: $sqlite-color
+  background-color: $sqlite-color;
 }
 
-
 @media (max-width: 800px) {
-.landingpage>* {
+  .landingpage>* {
     grid-column: span 3;
   }
 }

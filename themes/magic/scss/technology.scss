@@ -1,6 +1,6 @@
 .technology {
   display: grid;
-  gap: 2em 2em;
+  gap: 2em;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -20,40 +20,40 @@
   padding: 2em;
 }
 
-.Css {
+.techcss {
   grid-column: 1;
   color: $css-color;
 }
 
-.Html,
-.Javascript {
+.techhtml,
+.techjs {
   grid-column: span 2;
-  color: $js-color
+  color: $js-color;
 }
 
-.Html {
+.techhtml {
   color: $html-color;
 }
 
-.Python {
+.techpython {
   grid-column: span 3;
   order: 1;
   color: $python-color;
 }
 
-.Git {
+.techgit {
   grid-column: span 2;
   color: $git-color;
 }
 
-.Php {
+.techphp {
   color: $php-color;
 }
 
-.Sqlite {
-  color: $sqlite-color
+.techsqlite {
+  color: $sqlite-color;
 }
 
-.active {
-  background-color: red;
-}
+// .active {
+//   background-color: red;
+// }

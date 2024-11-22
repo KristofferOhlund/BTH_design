@@ -6692,7 +6692,7 @@ img {
 /* Grid container */
 .landingpage {
   display: grid;
-  gap: 1em 1em; /* row gap col gap*/
+  gap: 1em; /* row gap col gap*/
   text-align: center;
   max-width: 960px;
   margin: 0 auto;
@@ -6717,7 +6717,8 @@ img {
   scale: 1.1;
 }
 
-a, h1 {
+a,
+h1 {
   color: #f0f6fc;
   text-decoration: none;
 }
@@ -6728,17 +6729,17 @@ a, h1 {
 
 .css {
   grid-column: 1;
-  background-color: #12BC00;
+  background-color: #12bc00;
 }
 
 .html,
 .javascript {
   grid-column: span 2;
-  background-color: #9400FF;
+  background-color: #9400ff;
 }
 
 .html {
-  background-color: #A47f00;
+  background-color: #a47f00;
 }
 
 .python {
@@ -6767,7 +6768,7 @@ a, h1 {
 }
 .technology {
   display: grid;
-  gap: 2em 2em;
+  gap: 2em;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -6787,42 +6788,38 @@ a, h1 {
   padding: 2em;
 }
 
-.Css {
+.techcss {
   grid-column: 1;
-  color: #12BC00;
+  color: #12bc00;
 }
 
-.Html,
-.Javascript {
+.techhtml,
+.techjs {
   grid-column: span 2;
-  color: #9400FF;
+  color: #9400ff;
 }
 
-.Html {
-  color: #A47f00;
+.techhtml {
+  color: #a47f00;
 }
 
-.Python {
+.techpython {
   grid-column: span 3;
   order: 1;
   color: #191aed;
 }
 
-.Git {
+.techgit {
   grid-column: span 2;
   color: #b5007f;
 }
 
-.Php {
+.techphp {
   color: #4493f8;
 }
 
-.Sqlite {
+.techsqlite {
   color: #0a48ff;
-}
-
-.active {
-  background-color: red;
 }
 
 @media (max-width: 650px) {

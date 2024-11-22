@@ -9,11 +9,11 @@
             {% for page in pages("technology") %}
                 {% if page.current_page == page.title %}
                 <a href="{{ page.url }}">
-                    <p class="{{ page.meta.title }} active" >{{ page.title }}</p>
+                    <p class="{{ page.meta.class }} active" >{{ page.title }}</p>
                 </a>
                 {% else %}
                 <a  href="{{ page.url }}">
-                    <p class="{{ page.meta.title }}">{{ page.title }}</p>
+                    <p class="{{ page.meta.class }}">{{ page.title }}</p>
                 </a>
                 {% endif %}
             {% endfor %}
@@ -22,9 +22,6 @@
         <article class="article">
             {{ content }}
         </article>
-            
-        
-
     </div>
 
     {% include 'incl/footer.twig' %}
