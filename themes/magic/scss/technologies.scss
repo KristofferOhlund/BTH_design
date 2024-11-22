@@ -38,34 +38,34 @@ a, h1 {
 
 .css {
   grid-column: 1;
-  background-color: #12BC00;
+  background-color: $css-color
 }
 
 .html,
 .javascript {
   grid-column: span 2;
-  background-color: #9400FF;
+  background-color: $js-color
 }
 
-.html {background-color: #A47f00;}
+.html {background-color: $html-color;}
 
 .python {
   grid-column: span 3;
   order: 1;
-  background-color: #0d106f;
+  background-color: $python-color;
 }
 
 .git {
   grid-column: span 2;
-  background-color: #b5007f;
+  background-color: $git-color;
 }
 
 .php {
-  background-color: $link-color;
+  background-color: $php-color;
 }
 
 .sqlite {
-  background-color: #0a48ff;
+  background-color: $sqlite-color
 }
 
 

@@ -1,0 +1,58 @@
+.technology {
+  display: grid;
+  gap: 2em 2em;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: span 4;
+  border: 1px solid $border-color;
+  padding: 2em;
+}
+
+.article {
+  grid-column: 2;
+  padding: 2em;
+}
+
+
+.Css {
+  grid-column: 1;
+  color: $css-color;
+}
+
+.Html,
+.Javascript {
+  grid-column: span 2;
+  color: $js-color
+}
+
+.Html {
+  color: $html-color;
+}
+
+.Python {
+  grid-column: span 3;
+  order: 1;
+  color: $python-color;
+}
+
+.Git {
+  grid-column: span 2;
+  color: $git-color;
+}
+
+.Php {
+  color: $php-color;
+}
+
+.Sqlite {
+  color: $sqlite-color
+}
+
+
+@media (max-width: 800px) {
+  .landingpage>* {
+    grid-column: span 3;
+  }
+}

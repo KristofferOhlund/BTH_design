@@ -1,7 +1,7 @@
 ---
 Title: Javascript
 Description: Javascript description page
-template: technologies
+Template: technology
 Hidden: true
 ---
 

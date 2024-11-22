@@ -1,7 +1,7 @@
 ---
-Title: PHP
+Title: Php
 Description: PHP description page
-template: technologies
+Template: technology
 Hidden: true
 ---
 

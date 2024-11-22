@@ -6797,5 +6797,61 @@ a, h1 {
     grid-column: span 3;
   }
 }
+.technology {
+  display: grid;
+  gap: 2em 2em;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: span 4;
+  border: 1px solid #222;
+  padding: 2em;
+}
+
+.article {
+  grid-column: 2;
+  padding: 2em;
+}
+
+.Css {
+  grid-column: 1;
+  color: #12BC00;
+}
+
+.Html,
+.Javascript {
+  grid-column: span 2;
+  color: #9400FF;
+}
+
+.Html {
+  color: #A47f00;
+}
+
+.Python {
+  grid-column: span 3;
+  order: 1;
+  color: #0d106f;
+}
+
+.Git {
+  grid-column: span 2;
+  color: #b5007f;
+}
+
+.Php {
+  color: #4493f8;
+}
+
+.Sqlite {
+  color: #0a48ff;
+}
+
+@media (max-width: 800px) {
+  .landingpage > * {
+    grid-column: span 3;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

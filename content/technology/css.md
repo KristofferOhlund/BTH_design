@@ -1,7 +1,7 @@
 ---
-Title: CSS
+Title: Css
 Description: CSS Description page
-Template: technologies
+Template: technology
 Hidden: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 Title: Python
 Description: Python description page
-template: technologies
+Template: technology
 Hidden: true
 ---
 
