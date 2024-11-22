@@ -2,6 +2,7 @@
 Title: Php
 Description: PHP description page
 Template: technology
+class: techphp
 Hidden: true
 ---
 

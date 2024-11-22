@@ -2,6 +2,7 @@
 Title: Css
 Description: CSS Description page
 Template: technology
+class: techcss
 Hidden: true
 ---
 

@@ -2,6 +2,7 @@
 Title: Html
 Description: Html description page
 Template: technology
+class: techhtml
 Hidden: true
 ---
 

@@ -2,6 +2,7 @@
 Title: Python
 Description: Python description page
 Template: technology
+class: techpython
 Hidden: true
 ---
 

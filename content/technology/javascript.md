@@ -2,6 +2,7 @@
 Title: Javascript
 Description: Javascript description page
 Template: technology
+class: techjs
 Hidden: true
 ---
 
