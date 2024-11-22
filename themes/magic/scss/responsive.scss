@@ -35,3 +35,26 @@
     width: 80%;
   }
 }
+
+@media (max-width: 800px) {
+  .landingpage>* {
+    grid-column: span 3;
+    gap: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .article {
+    grid-column: 1;
+    padding: 0;
+  }
+  .article pre {
+      display: none;
+    }
+}

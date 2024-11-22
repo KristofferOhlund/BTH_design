@@ -1,20 +1,24 @@
 .technology {
   display: grid;
   gap: 2em 2em;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .menu {
   grid-column: 1;
-  grid-row: span 4;
   border: 1px solid $border-color;
   padding: 2em;
+}
+
+.menu *:hover {
+  scale: 1.1;
 }
 
 .article {
   grid-column: 2;
   padding: 2em;
 }
-
 
 .Css {
   grid-column: 1;
@@ -50,9 +54,6 @@
   color: $sqlite-color
 }
 
-
-@media (max-width: 800px) {
-  .landingpage>* {
-    grid-column: span 3;
-  }
+.active {
+  background-color: red;
 }
