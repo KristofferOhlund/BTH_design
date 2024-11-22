@@ -2,6 +2,7 @@
 Title: Python
 Description: Python description page
 template: technologies
+Hidden: true
 ---
 
 # Python

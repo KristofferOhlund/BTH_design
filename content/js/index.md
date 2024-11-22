@@ -2,6 +2,7 @@
 Title: Javascript
 Description: Javascript description page
 template: technologies
+Hidden: true
 ---
 
 # JavaScript

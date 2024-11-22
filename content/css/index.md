@@ -2,6 +2,7 @@
 Title: CSS
 Description: CSS Description page
 Template: technologies
+Hidden: true
 ---
 
 # CSS

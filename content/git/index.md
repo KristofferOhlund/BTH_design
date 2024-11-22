@@ -2,6 +2,7 @@
 Title: Git
 Description: Git description page
 template: technologies
+Hidden: true
 ---
 
 

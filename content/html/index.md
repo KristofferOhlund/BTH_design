@@ -2,6 +2,7 @@
 Title: Html
 Description: Html description page
 template: technologies
+Hidden: true
 ---
 
 

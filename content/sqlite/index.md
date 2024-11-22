@@ -2,6 +2,7 @@
 Title: Sqlite
 Description: Sqlite description page
 template: technologies
+Hidden: true
 ---
 
 # SQLite
