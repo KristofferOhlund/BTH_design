@@ -6822,6 +6822,11 @@ h1 {
   color: #0a48ff;
 }
 
+.active {
+  background-color: #222;
+  border-radius: 5px;
+}
+
 @media (max-width: 650px) {
   .title,
   .logo {

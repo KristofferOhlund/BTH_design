@@ -7,15 +7,18 @@
         <aside class="menu">
             <h1>Meny</h1>
             {% for page in pages("technology") %}
-                {% if page.current_page == page.title %}
-                <a href="{{ page.url }}">
-                    <p class="{{ page.meta.class }} active" >{{ page.title }}</p>
+               <p class="{{ current_page.url == page.url ? 'active ' ~ page.meta.class : page.meta.class }}">
+                    <a class="{{page.meta.class}}" href="{{ page.url }}">{{ page.title }}</a>
+               </p>
+
+
+                <!--<a class="{{ current_page.url == page.url ? 'active' : "" }}"
+                    href="{{ page.url }}"><p class="{{ page.meta.class }} "> {{ page.title }}</p>
                 </a>
-                {% else %}
-                <a  href="{{ page.url }}">
-                    <p class="{{ page.meta.class }}">{{ page.title }}</p>
-                </a>
-                {% endif %}
+                
+                    
+                     <p class="{{ page.meta.class }}">{{ page.title }}</p> -->
+                
             {% endfor %}
         </aside>
 

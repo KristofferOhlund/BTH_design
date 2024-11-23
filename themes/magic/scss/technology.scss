@@ -54,6 +54,7 @@
   color: $sqlite-color;
 }
 
-// .active {
-//   background-color: red;
-// }
+.active {
+  background-color: $border-color;
+  border-radius: 5px;
+}
