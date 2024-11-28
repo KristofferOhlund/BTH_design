@@ -17,6 +17,6 @@ Settings:
       icon: fas fa-moon
     - title: Destroy Session
       url: "?action=session_destroy"
-      icon: fas fa-trash-alt
-
+      # icon: fas fa-trash-alt
+      icon: fas fa-dumpster
 ---

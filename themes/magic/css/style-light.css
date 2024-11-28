@@ -6522,7 +6522,8 @@ pre code {
   color: #222;
 }
 
-.footer .social a {
+.footer .social a,
+.footer .normal-box a {
   font-size: 2rem;
 }
 
