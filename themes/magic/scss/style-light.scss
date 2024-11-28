@@ -18,3 +18,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'technologies';
 @import 'technology';
 @import 'responsive';
+
+/* Längst ner i min style-light.scss */
+.main {
+  background-color: white;
+}

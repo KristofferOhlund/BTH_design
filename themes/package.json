@@ -7,8 +7,14 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass magic/scss/style-light.scss:magic/css/style-light.css magic/scss/style-dark.scss:magic/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass kmom02/scss/style.scss:kmom02/css/style.min.css kmom02/scss/style-dark.scss:kmom02/css/style-dark.min.css --no-source-map --watch --style compressed",
     "style": "sass magic/scss/style.scss magic/css/style.css --no-source-map",
     "style-min": "sass magic/scss/style.scss magic/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass magic/scss/style-dark.scss magic/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass magic/scss/style-dark.scss magic/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass magic/scss/style-light.scss magic/css/style-light.css --no-source-map",
+    "style-light-min": "sass magic/scss/style.scss magic/css/style.min.css --no-source-map --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

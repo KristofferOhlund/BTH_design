@@ -1,11 +1,17 @@
 <div class="container">
     <div class="footer">
         <div class="normal-box">
-            <h3>Links</h3>
-            <ol>
+            <h3>Themes & Sessions</h3>
+            {% for setting in pages["_meta"].meta.Settings %}
+            <a href="{{ setting.url }}" title="{{ setting.title }}" role="button">
+                <i class="{{ setting.icon }}" aria-hidden="true"></i>
+                <span class="sr-only">{{ setting.title }}</span>
+            </a>
+            {% endfor %}
+            {# <ol>
                 <li><a href="http://validator.w3.org/check/referer">HTML Validator</a></li>
                 <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS Validator</a></li>
-            </ol>
+            </ol> #}
         </div>
 
         <div class="social">
