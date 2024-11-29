@@ -12,7 +12,7 @@ Social:
       url: https://www.facebook.com/kristoffer.ohlund.5
       icon: fab fa-facebook
 Settings:
-    - title: Light Mode
+    - title: Change Theme
       url: "?action=theme"
       icon: fas fa-moon
     - title: Destroy Session

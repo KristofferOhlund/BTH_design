@@ -6677,10 +6677,7 @@ dd {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-size: 1.8em;
   margin-bottom: 0.6em;
   font-weight: bold;
@@ -6862,7 +6859,8 @@ h1 {
   }
 }
 @media (max-width: 800px) {
-  .landingpage > * {
+  .landingpage > *,
+  .grid-child {
     grid-column: span 3;
     gap: 0;
   }
@@ -6881,4 +6879,37 @@ h1 {
     display: none;
   }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1em;
+  text-wrap: nowrap;
+}
+
+.grid-child {
+  background-color: red;
+  justify-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1em;
+  background: linear-gradient(to right bottom, #fec934, #d9dada);
+}
+
+.grid-child h4,
+.grid-child a {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  color: #0d1117;
+}
+
+.grid-header {
+  grid-column: span 3;
+  font-size: 2.5em;
+}
+
 /* Dark-style är standard theme */

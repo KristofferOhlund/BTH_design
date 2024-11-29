@@ -37,7 +37,8 @@
 }
 
 @media (max-width: 800px) {
-  .landingpage>* {
+  .landingpage>*,
+  .grid-child {
     grid-column: span 3;
     gap: 0;
   }
