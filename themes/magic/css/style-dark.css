@@ -6912,4 +6912,8 @@ h1 {
   font-size: 2.5em;
 }
 
+.seperator {
+  color: red;
+}
+
 /* Dark-style är standard theme */

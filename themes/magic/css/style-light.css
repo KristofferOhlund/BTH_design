@@ -6912,7 +6912,16 @@ h1 {
   font-size: 2.5em;
 }
 
+.seperator {
+  color: red;
+}
+
 /* Längst ner i min style-light.scss */
-.main {
+body {
   background-color: white;
+  color: black;
+}
+
+.seperator {
+  color: red;
 }

@@ -4,7 +4,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
-@import 'variables';
+@import 'variables-light';
 @import 'main';
 @import 'blockquotes';
 @import 'code';
@@ -21,6 +21,10 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'reports';
 
 /* Längst ner i min style-light.scss */
-.main {
+body {
   background-color: white;
+  color: black;
+}
+.seperator {
+  color: red;
 }
