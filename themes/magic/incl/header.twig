@@ -18,9 +18,15 @@
     <!--KONTROLLERA TEMAT. GUIDE SÄGER DARK JAG SKA HA LIGHT-->
     <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
     
-    {% if config.session.theme == "dark" %}
+    {# {% if config.session.theme == "dark" %}
         <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css"/>
     {% else %}
         <link rel="stylesheet" href="{{ theme_url }}/css/style-light.css" type="text/css" />
+    {% endif %} #}
+
+    {% if config.session.theme == "light" %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-light.css" type="text/css"/>
+    {% else %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
     {% endif %}
 </head>

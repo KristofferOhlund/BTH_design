@@ -9,10 +9,16 @@ if (isset($_GET["action"])) {
     if ($_GET["action"] == "theme") {
         $previusValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
 
-        if ($previusValue == "dark") {
+        // if ($previusValue == "dark") {
+        //     unset($_SESSION["theme"]);
+        // } else {
+        //     $_SESSION["theme"] = "dark";
+        // }
+
+        if ($previusValue == "light") {
             unset($_SESSION["theme"]);
         } else {
-            $_SESSION["theme"] = "dark";
+            $_SESSION["theme"] = "light";
         }
 
 
