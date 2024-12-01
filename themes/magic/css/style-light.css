@@ -6445,8 +6445,8 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .article {
@@ -6910,7 +6910,6 @@ h1 {
 }
 
 .grid-child {
-  background-color: red;
   justify-self: stretch;
   display: flex;
   justify-content: center;
