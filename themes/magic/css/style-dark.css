@@ -6424,13 +6424,19 @@ readers do not read off random characters that represent icons */
 }
 
 /* VARIABLES */
+/* abstracts */
+/* Navigation */
+/* Header and footer */
+/* Technologies Color */
 /* Placement */
 body {
-  background-color: #0d1117;
+  height: 100vh;
 }
 
 html {
+  height: 100vh;
   font-size: 100%;
+  background-color: #0d1117;
 }
 
 .main {
@@ -6439,6 +6445,12 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article {
+  background-color: #0d1117;
 }
 
 .header,
@@ -6460,11 +6472,6 @@ ul {
 
 .hidden {
   display: none !important;
-}
-
-html,
-body {
-  height: 100vh;
 }
 
 blockquote {
@@ -6505,12 +6512,19 @@ pre code {
 
 .figure-left {
   float: right;
-  margin: 0 2em 1em;
 }
 
 /* Footer */
 .container {
+  border-top: 1px solid #222;
+  margin-bottom: 0;
   height: 20vh;
+}
+
+.footer-h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer {
@@ -6550,12 +6564,17 @@ pre code {
   margin-bottom: 2%;
 }
 
-.container {
-  border-top: 1px solid #222;
-  margin-top: 2rem;
+.fa-github {
+  color: #f0f6fc;
 }
 
-.fa-github {
+.fab,
+.fas {
+  color: #f0f6fc;
+}
+
+.footer h3,
+.copyright p {
   color: #f0f6fc;
 }
 
@@ -6570,10 +6589,12 @@ pre code {
 }
 
 /* Title */
-.title,
-.logo {
+.title {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.logo {
   min-width: 10%;
 }
 
@@ -6608,6 +6629,10 @@ pre code {
 .nav a,
 .nav-toggle {
   color: #f0f6fc;
+}
+
+.nav a:hover {
+  color: #222;
 }
 
 .nav-toggle {
@@ -6760,11 +6785,6 @@ h1 {
   background-color: #0a48ff;
 }
 
-@media (max-width: 800px) {
-  .landingpage > * {
-    grid-column: span 3;
-  }
-}
 .technology {
   display: grid;
   gap: 2em;
@@ -6910,10 +6930,6 @@ h1 {
 .grid-header {
   grid-column: span 3;
   font-size: 2.5em;
-}
-
-.seperator {
-  color: red;
 }
 
 /* Dark-style är standard theme */

@@ -19,6 +19,10 @@
   color: #f0f6fc;
 }
 
+.nav a:hover {
+  color: $nav-hover-color;
+}
+
 .nav-toggle {
   display: none;
 }

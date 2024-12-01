@@ -69,9 +69,3 @@ h1 {
 .sqlite {
   background-color: $sqlite-color;
 }
-
-@media (max-width: 800px) {
-  .landingpage>* {
-    grid-column: span 3;
-  }
-}

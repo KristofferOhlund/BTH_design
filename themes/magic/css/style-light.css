@@ -6424,13 +6424,19 @@ readers do not read off random characters that represent icons */
 }
 
 /* VARIABLES */
+/* abstracts */
+/* Navigation */
+/* Header and footer */
+/* Technologies Color */
 /* Placement */
 body {
-  background-color: #0d1117;
+  height: 100vh;
 }
 
 html {
+  height: 100vh;
   font-size: 100%;
+  background-color: #6c84aa;
 }
 
 .main {
@@ -6439,6 +6445,12 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article {
+  background-color: #ccc;
 }
 
 .header,
@@ -6460,11 +6472,6 @@ ul {
 
 .hidden {
   display: none !important;
-}
-
-html,
-body {
-  height: 100vh;
 }
 
 blockquote {
@@ -6505,12 +6512,19 @@ pre code {
 
 .figure-left {
   float: right;
-  margin: 0 2em 1em;
 }
 
 /* Footer */
 .container {
+  border-top: 1px solid #ccc;
+  margin-bottom: 0;
   height: 20vh;
+}
+
+.footer-h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer {
@@ -6519,7 +6533,7 @@ pre code {
 }
 
 .footer a {
-  color: #222;
+  color: #ccc;
 }
 
 .footer .social a,
@@ -6540,7 +6554,7 @@ pre code {
 .social a {
   display: flex;
   justify-content: center;
-  color: #f0f6fc;
+  color: #222;
 }
 
 .copyright p {
@@ -6550,12 +6564,17 @@ pre code {
   margin-bottom: 2%;
 }
 
-.container {
-  border-top: 1px solid #222;
-  margin-top: 2rem;
+.fa-github {
+  color: #f0f6fc;
 }
 
-.fa-github {
+.fab,
+.fas {
+  color: #f0f6fc;
+}
+
+.footer h3,
+.copyright p {
   color: #f0f6fc;
 }
 
@@ -6566,14 +6585,16 @@ pre code {
   justify-content: space-between;
   text-wrap: nowrap;
   height: 13rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Title */
-.title,
-.logo {
+.title {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.logo {
   min-width: 10%;
 }
 
@@ -6582,7 +6603,7 @@ pre code {
 }
 
 .title * {
-  color: #f0f6fc;
+  color: #222;
 }
 
 .title p {
@@ -6608,6 +6629,10 @@ pre code {
 .nav a,
 .nav-toggle {
   color: #f0f6fc;
+}
+
+.nav a:hover {
+  color: #102f76;
 }
 
 .nav-toggle {
@@ -6647,7 +6672,7 @@ pre code {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5rem;
-  color: #f0f6fc;
+  color: #222;
 }
 
 a {
@@ -6718,7 +6743,7 @@ img {
 
 a,
 h1 {
-  color: #f0f6fc;
+  color: #222;
   text-decoration: none;
 }
 
@@ -6760,11 +6785,6 @@ h1 {
   background-color: #0a48ff;
 }
 
-@media (max-width: 800px) {
-  .landingpage > * {
-    grid-column: span 3;
-  }
-}
 .technology {
   display: grid;
   gap: 2em;
@@ -6774,7 +6794,7 @@ h1 {
 
 .menu {
   grid-column: 1;
-  border: 1px solid #222;
+  border: 1px solid #ccc;
   padding: 2em;
 }
 
@@ -6822,7 +6842,7 @@ h1 {
 }
 
 .active {
-  background-color: #222;
+  background-color: #102f76;
   border-radius: 5px;
 }
 
@@ -6912,16 +6932,4 @@ h1 {
   font-size: 2.5em;
 }
 
-.seperator {
-  color: red;
-}
-
 /* Längst ner i min style-light.scss */
-body {
-  background-color: white;
-  color: black;
-}
-
-.seperator {
-  color: red;
-}

@@ -1,11 +1,14 @@
 /* Placement */
 
 body {
-  background-color: $dark-color;
+  // background-color: $background-color;
+  height: 100vh;
 }
 
 html {
+  height: 100vh;
   font-size: 100%;
+  background-color: $background-color;
 }
 
 .main {
@@ -14,6 +17,12 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article {
+  background-color: $article-background-color;
 }
 
 .header,
@@ -35,9 +44,4 @@ ul {
 
 .hidden {
   display: none !important;
-}
-
-html,
-body {
-  height: 100vh;
 }

@@ -7,14 +7,17 @@
   text-wrap: nowrap;
   height: 13rem;
   border-bottom: 1px solid $border-color;
+  // background-color: $header-background-color;
 }
 
 /* Title */
 
-.title,
-.logo {
+.title {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.logo {
   min-width: 10%;
 }
 

@@ -1,16 +1,27 @@
 /* Footer */
 
 .container {
+  // background-color: $footer-background-color;
+  border-top: 1px solid $border-color;
+  // margin-top: 2rem;
+  margin-bottom: 0;
   height: 20vh;
 }
 
+.footer-h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+}
+
 .footer {
+  // background-color: $footer-background-color;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer a {
-  color: #222;
+  color: $border-color;
 }
 
 .footer .social a,
@@ -41,11 +52,16 @@
   margin-bottom: 2%;
 }
 
-.container {
-  border-top: 1px solid $border-color;
-  margin-top: 2rem;
+.fa-github {
+  color: $icon-color;
 }
 
-.fa-github {
-  color: $text-color;
+.fab,
+.fas {
+  color: $icon-color;
+}
+
+.footer h3, 
+.copyright p {
+  color: $nav-color;
 }

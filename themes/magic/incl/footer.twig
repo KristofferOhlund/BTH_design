@@ -1,7 +1,7 @@
 <div class="container">
     <div class="footer">
         <div class="normal-box">
-            <h3>Settings</h3>
+            <h3 class="footer-h3">Settings</h3>
             {% for setting in pages["_meta"].meta.Settings %}
             <a href="{{ setting.url }}" title="{{ setting.title }}" role="button">
                 <i class="{{ setting.icon }}" aria-hidden="true"></i>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="social">
-            <h3>Contact</h3>
+            <h3 class="footer-h3">Contact</h3>
             <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
             {% for social in pages["_meta"].meta.social %}
             <a href="{{ social.url }}" title="{{ social.title }}" role="button">

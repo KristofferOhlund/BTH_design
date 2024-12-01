@@ -1,10 +1,27 @@
 /* VARIABLES */
 
-$dark-color: #0d1117;
-$text-color: #f0f6fc;
+/* abstracts */
+
+$background-color: #0d1117;
+$pre-border-color: #ccc;
+$pre-background-color: #f5f5f5;
 $border-color: #222;
-$code-text-color: $border-color; 
+$code-text-color: $border-color;
+$text-color: #f0f6fc;
 $link-color: #4493f8;
+$active-color: #222;
+$article-background-color: $background-color;//#ffffff;
+
+/* Navigation */
+$nav-color: #f0f6fc;
+$nav-hover-color: $active-color;
+$icon-color: $nav-color;
+
+/* Header and footer */
+$footer-background-color: $background-color;
+$header-background-color: $footer-background-color;
+
+/* Technologies Color */
 $css-color: #12bc00;
 $js-color: #9400ff;
 $html-color: #a47f00;
@@ -14,4 +31,3 @@ $php-color: $link-color;
 $sqlite-color: #0a48ff;
 $logo-gold-color: #fec934;
 $logo-white-color: #d9dada;
-
