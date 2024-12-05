@@ -68,4 +68,77 @@ Hexadecimal baseras på multipler av sexton och har sex siffror.
 * [Paletton](https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) 
 * [Colormind.io](http://colormind.io/template/material-dashboard/)
 * [Adobe Color](https://color.adobe.com/create/color-wheel)
-* [Colour Contrast Check]()
+* [Colour Contrast Check](https://webaim.org/resources/contrastchecker/)
+
+
+### BILDER
+
+    img, embed, object, video {
+        max-width: 100%;
+    }
+
+Avänt ovan css för att alltid sätta bilder och liknande till 100% width av dess parent container.
+
+    <picture>
+        <source media="(min-width: 668px)" srcset="sheep.jpg, sheep@2x.jpg 2x">
+        <source media="(min-width: 376px)" srcset="sheep-small-landscape.jpg">
+        <img src="sheep-small-portrait.jpg" class="max-width" alt="sheep">
+    </picture>
+
+För att få olika bilder att laddas vid olika storlek av skärmar kan vi använda picture elementet.
+source media är en media query, första exemplet säger om skärmen är minst 668px bred, ladda sheep.jpg, är det en retina skärm så ladda sheep@2x.jpg. Detta kan även ske med små skärmar men hög pixeldensitet, typ moderna telefoner, ihpone etc. Så srcset säger att ladda sheep.jpg om skärmen är minst 668px, eller ladda sheepp@2x om pixeldensiteten är dubbel (avslutande 2x).
+Om skärmen är minst 376px men mindre än 668px så ladda srcset=sheep-small-landscape
+Om skärmen är ännu mindre så laddas img src taggen
+
+Om vi använder Bilder i vår markdown och vill lägga till en klass kan vi använda {<.class>} som tredje argument.
+    ![Image Title](%assets_url%/image.png) {.small}
+
+
+### CImage
+I pico kan vi använda {%asset_url} för att skapa en sökväg till en bild, %asset_url% är standard enligt Pico och vi förväntas där ha assets som bilder osv. Om vi därför i vår markdown fil pekar på en bild genom att använda
+
+    ![sample](%assets_url/folder/<bild.jpg>%)
+
+så kommer bilden visas som förväntat, men vill vi kunna visa olika bilder vid olika skärmstorlekar behöver vi ha olika storleket på varje bild. Man behöver då tex via ett bild redigeringsprogram skapat varianter av samma bild.
+Ett sätt att byta bild är då att använda ett picture element och använda srcset som du sätter olika bilder beroende på ex skärmens storlek.
+
+    <picture>
+        <source media="(min-width: 668px)" srcset="sheep.jpg, sheep@2x.jpg 2x">
+        <source media="(min-width: 376px)" srcset="sheep-small-landscape.jpg">
+        <img src="sheep-small-portrait.jpg" class="max-width" alt="sheep">
+    </picture>
+
+Om vi istället använder
+
+    !|[sample](image/folder/<bild.jp>)
+
+så har vi via vår .htacess gjort en rewrite fil som gör att vi istället använder CImage som redigeringsprogram och vilket då även möjliggör olika argument.
+
+    <picture>
+        <source media="(min-width: 668px)" srcset="image/sheep.jpg">
+        <source media="(min-width: 376px)" srcset="image/sheep.jpg?w=667">
+        <img src="image/sheep.jpg?w=375" alt="sheep">
+    </picture>
+
+se ?w=667 ovan, som sätter width på bilden till 667 pixlar.
+
+### Tillgänglighet
+Det är viktigt att ha alt attribut på bilder, då en synskadad som använder internet ändå kan få information om vad för slags bild som visas, genom att webbläsaren läser alt attributet.
+Ett tips för att kunna kontrollera alla bilder om det har attributet är att använda css psuedo classen :not
+
+    img:not([alt]) {
+        outline: 4px red dashed !important;
+    }
+
+Ovan kollar alla img element och lägger på pseudo classen :not som tar ett attribut som argument. 
+Här anges alt som attribut, sidan kollar då vilka img element som inte har alt attribut, och i så fall lägger på en outline. Det blir nu enkelt att se vilka bilder man glömt alt på.
+
+### Page Speed
+Page load time: The time it takes for a webpage to load and become fully interactive.
+Server response time: The time it takes for a server to respond to a request from a user’s browser.
+Core web vitals: A set of metrics that measure the performance of a webpage, including largest contentful paint (LCP), first input delay (FID), and cumulative layout shift (CLS).
+
+Time to first byte (TTFB): The time it takes for a server to respond to a request from a user’s browser.
+First contentful paint (FCP): The time it takes for the first content to be painted on the screen.
+Largest contentful paint (LCP): The time it takes for the largest content element to be painted on the screen.
+First input delay (FID): The time it takes for a user to interact with a webpage after it has loaded.
