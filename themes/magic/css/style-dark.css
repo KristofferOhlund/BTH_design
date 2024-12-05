@@ -6931,4 +6931,11 @@ h1 {
   font-size: 2.5em;
 }
 
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
 /* Dark-style är standard theme */
