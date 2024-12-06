@@ -6938,4 +6938,12 @@ video {
   max-width: 100%;
 }
 
+.gallery-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-content: center;
+  background-color: red;
+}
+
 /* Längst ner i min style-light.scss */
