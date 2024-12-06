@@ -1,7 +1,7 @@
 ---
 Title: Docs 
 Description: Documentation that came with Pico.
-# hidden: true
+hidden: true
 ---
 
 <!-- Design är en arbetsprocess för att utveckla lösningar på ett medvetet och innovativt sätt där både
