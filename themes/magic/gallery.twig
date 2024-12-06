@@ -4,11 +4,20 @@
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
-        <div class="article"> 
+        <div class="gallery-article"> 
+            {{content}}
             <div class="gallery-container">
-                {{ content }}
+                
+                {% for image in meta.Images %}
+                <a href="{{ assets_url }}/img/{{ image.url}}">
+                    <picture class="gallery-picture">
+                            <source media="(min-width: 668px)" srcset="image/{{image.url}}?w=30%&%=90">
+                            <source media="(min-width: 368px)" srcset="image/{{image.url}}?w=20%&q=90">
+                            <img class="gallery-img" src="image/{{image.url}}" alt="{{image.title}}">
+                    </picture>
+                </a>
+                {% endfor %}
             </div>
-            
         </div>
     </div>
     

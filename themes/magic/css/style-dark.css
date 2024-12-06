@@ -6868,7 +6868,8 @@ h1 {
   /* } */
   .normal-box,
   .social,
-  .copyright {
+  .copyright,
+  .gallery-article {
     width: 100%;
     text-align: center;
   }
@@ -6941,9 +6942,24 @@ video {
 .gallery-container {
   display: grid;
   gap: 10px;
+  margin: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-content: center;
-  background-color: red;
+  justify-content: center;
+}
+
+.gallery-container > * {
+  justify-self: center;
+  align-self: center;
+}
+
+.gallery-img {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.gallery-article {
+  text-align: left;
 }
 
 /* Dark-style är standard theme */

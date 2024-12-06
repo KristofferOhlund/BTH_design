@@ -142,3 +142,8 @@ Time to first byte (TTFB): The time it takes for a server to respond to a reques
 First contentful paint (FCP): The time it takes for the first content to be painted on the screen.
 Largest contentful paint (LCP): The time it takes for the largest content element to be painted on the screen.
 First input delay (FID): The time it takes for a user to interact with a webpage after it has loaded.
+
+### PICO, MarkDown och Twig filer
+
+I Pico kan vi använda {% asset_url %} för att i vår markdown hänvisa till en sökväg.
+Men i Twig använder vi {{ asset_url }} för att hänvisa till en sökväg. 
