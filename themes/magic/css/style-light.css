@@ -6989,6 +6989,10 @@ video {
   padding-bottom: 2em;
 }
 
+img:not([alt]) {
+  outline: 4px red dashed !important;
+}
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
