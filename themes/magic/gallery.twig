@@ -7,10 +7,9 @@
         <div class="gallery-article"> 
             {{content}}
             <div class="gallery-container">
-                
                 {% for image in meta.Images %}
                 <a href="{{ assets_url }}/img/{{ image.url}}">
-                    <picture class="gallery-picture">
+                    <picture class="gallery-picture shadow">
                             <source media="(min-width: 668px)" srcset="image/{{image.url}}?w=30%&%=90">
                             <source media="(min-width: 368px)" srcset="image/{{image.url}}?w=20%&q=90">
                             <img class="gallery-img" src="image/{{image.url}}" alt="{{image.title}}">

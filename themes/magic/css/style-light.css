@@ -6478,6 +6478,11 @@ ul {
   color: #4493f8;
 }
 
+.emphasize {
+  color: #fec934;
+  font-size: xx-large;
+}
+
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6944,7 +6949,7 @@ video {
 
 .gallery-container {
   display: grid;
-  gap: 10px;
+  gap: 15px;
   margin: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-content: center;
@@ -6958,6 +6963,7 @@ video {
 
 .gallery-img {
   border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.3);
 }
 
 .gallery-article {
@@ -6970,6 +6976,7 @@ video {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin-top: 2em;
 }
 
 .embed-container iframe,
