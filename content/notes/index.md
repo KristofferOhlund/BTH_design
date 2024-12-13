@@ -73,6 +73,11 @@ Hexadecimal baseras på multipler av sexton och har sex siffror.
 
 ### BILDER
 
+Använd vektoriserade bilder istället för rasterbilder, då vektoriserade bilder går att skala upp och samtidigt behålla kvalitén.
+
+Vektoriserade bilder är ex SVG och EPS (används främst för illustrationer och loggor)
+Rasterbilder är jpeg, jpg, png (används främst för foton och webben (mindre storlek))
+
     img, embed, object, video {
         max-width: 100%;
     }
@@ -147,3 +152,36 @@ First input delay (FID): The time it takes for a user to interact with a webpage
 
 I Pico kan vi använda {% asset_url %} för att i vår markdown hänvisa till en sökväg.
 Men i Twig använder vi {{ asset_url }} för att hänvisa till en sökväg. 
+
+
+## Art Principles
+
+### Art Elements
+* Line - Linje
+* Shape - kontur
+* Form - Form (3d)
+* Color - Färg
+* Space - Utrymme
+* Texture - Textur
+* Mass - 
+* Light - Ljus
+
+## Principles
+* Contrast - Kontrast
+* Unity - Enhet
+* Balance - Balans
+* Emphasis - Förstärkning (bold, färglagd, större text etc)
+* Variety - Variation
+* Movement - Rörelse (pilar, flöde, svep)
+* Pattern - Mönster
+
+Kom ihåg samtliga genom "CUBE VAMP" - Kubvampyr
+
+1. Kontrast - motsatta färger, känslor, miljöer, ljus
+2. Enhet - Färger, mönster, många små tillsammans skapar en enhet
+3. Balans - Lika storlek, många små har balans med en stor
+ - Symmetri (lika) och -asymmetri - olika men ändå balanserad pga stora / små
+4. Förstärkning - Färg, markering, förstärk så det sticker ut, peka på något
+5. Variation - Olika mönster, olika färger
+6. Rörelse - pilar, peka på något, swep, ögonen vill följa pilar
+7. Mönster - Naturliga och oförutsägbara (ex löv på ett träd) Mekaniska och förutsägbara (ex upprepade mönster, 4kanter följt av 1 cirkel osv.)
