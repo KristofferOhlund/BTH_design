@@ -17,13 +17,13 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
-  margin-top: 0;
-  margin-bottom: 0;
+  top: 0;
+  bottom: 0;
 }
 
-.article {
-  background-color: $article-background-color;
-}
+// .article {
+//   background-color: $article-background-color;
+// }
 
 .header,
 .footer {
@@ -51,6 +51,5 @@ ul {
 }
 
 .emphasize {
-  color: $logo-gold-color;
   font-size: xx-large;
 }

@@ -17,18 +17,12 @@ video {
 .gallery-header {
   text-align: center;
   font-size: 3em;
-  text-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3)
+  text-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3);
 }
 
 .gallery-img {
   border-radius: 2px;
-  box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3)
-}
-
-.test-box {
-  background-color: red;
-  width: 200px;
-  height: 200px;
+  box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3);
 }
 
 .embed-container {
@@ -59,5 +53,5 @@ video {
 }
 
 img:not([alt]) {
-  outline: 4px red dashed !important;
+  outline: 4px dashed rgb(100, 0, 0) !important;
 }

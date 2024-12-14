@@ -7,7 +7,7 @@
   text-wrap: nowrap;
   height: 13rem;
   border-bottom: 1px solid $border-color;
-  // background-color: $header-background-color;
+  background-color: $header-background-color;
 }
 
 /* Title */
@@ -26,7 +26,7 @@
 }
 
 .title * {
-  color: $text-color;
+  color: #f0f6fc;
 }
 
 .title p {

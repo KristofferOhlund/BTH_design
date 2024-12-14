@@ -6436,7 +6436,7 @@ body {
 html {
   height: 100vh;
   font-size: 100%;
-  background-color: #6c84aa;
+  background-color: #90a8d0;
 }
 
 .main {
@@ -6445,12 +6445,8 @@ html {
   width: 64em;
   margin: 1.96rem auto;
   min-height: 55vh;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.article {
-  background-color: #ccc;
+  top: 0;
+  bottom: 0;
 }
 
 .header,
@@ -6479,7 +6475,6 @@ ul {
 }
 
 .emphasize {
-  color: #fec934;
   font-size: xx-large;
 }
 
@@ -6499,7 +6494,7 @@ code {
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
-  color: #222;
+  color: #000;
 }
 
 pre {
@@ -6526,14 +6521,20 @@ pre code {
 /* Footer */
 .container {
   border-top: 1px solid #ccc;
+  bottom: 0;
+  height: 25vh;
   margin-bottom: 0;
-  height: 20vh;
+}
+
+.container > * {
+  background-color: #2e4272;
 }
 
 .footer-h3 {
   font-size: 1.4em;
-  font-weight: normal;
+  font-weight: bold;
   font-family: "Roboto", sans-serif;
+  color: #f0f6fc;
 }
 
 .footer {
@@ -6563,7 +6564,7 @@ pre code {
 .social a {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: #000;
 }
 
 .copyright p {
@@ -6595,6 +6596,7 @@ pre code {
   text-wrap: nowrap;
   height: 13rem;
   border-bottom: 1px solid #ccc;
+  background-color: #2e4272;
 }
 
 /* Title */
@@ -6612,7 +6614,7 @@ pre code {
 }
 
 .title * {
-  color: #222;
+  color: #f0f6fc;
 }
 
 .title p {
@@ -6629,6 +6631,7 @@ pre code {
   justify-content: flex-end;
   padding: 1em 0;
   list-style: none;
+  background-color: #2e4272;
 }
 
 .nav ul li {
@@ -6681,7 +6684,7 @@ pre code {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5rem;
-  color: #222;
+  color: #000;
 }
 
 a {
@@ -6752,7 +6755,7 @@ img {
 
 a,
 h1 {
-  color: #222;
+  color: #000;
   text-decoration: none;
 }
 
@@ -6762,36 +6765,36 @@ h1 {
 
 .css {
   grid-column: 1;
-  background-image: linear-gradient(to bottom right, #12bc00, #12bc00, #222);
+  background-image: linear-gradient(to bottom right, #12bc00, #12bc00, #d9dada);
 }
 
 .html,
 .javascript {
   grid-column: span 2;
-  background-image: linear-gradient(to bottom right, #9400ff, #9400ff, #222);
+  background-image: linear-gradient(to bottom right, #9400ff, #9400ff, #d9dada);
 }
 
 .html {
-  background-image: linear-gradient(to bottom right, #a47f00, #a47f00, #222);
+  background-image: linear-gradient(to bottom right, #a47f00, #a47f00, #d9dada);
 }
 
 .python {
   grid-column: span 3;
   order: 1;
-  background-image: linear-gradient(to bottom right, #191aed, #191aed, #191aed, #222);
+  background-image: linear-gradient(to bottom right, #191aed, #191aed, #191aed, #d9dada);
 }
 
 .git {
   grid-column: span 2;
-  background-image: linear-gradient(to bottom right, #b5007f, #b5007f, #222);
+  background-image: linear-gradient(to bottom right, #b5007f, #b5007f, #d9dada);
 }
 
 .php {
-  background-image: linear-gradient(to bottom right, #4493f8, #4493f8, #222);
+  background-image: linear-gradient(to bottom right, #4493f8, #4493f8, #d9dada);
 }
 
 .sqlite {
-  background-image: linear-gradient(to bottom right, #0a48ff, #0a48ff, #222);
+  background-image: linear-gradient(to bottom right, #0a48ff, #0a48ff, #d9dada);
 }
 
 .technology {
@@ -6875,10 +6878,10 @@ h1 {
   background: linear-gradient(to right bottom, #fec934, #d9dada);
 }
 
-.grid-child h4,
+.grid-child h1,
 .grid-child a {
   font-size: 1.2em;
-  margin-bottom: 0;
+  margin: 5px;
   color: #0d1117;
 }
 
@@ -6914,12 +6917,6 @@ video {
   box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3);
 }
 
-.test-box {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-}
-
 .embed-container {
   position: relative;
   margin: 0 auto;
@@ -6948,7 +6945,7 @@ video {
 }
 
 img:not([alt]) {
-  outline: 4px red dashed !important;
+  outline: 4px dashed rgb(100, 0, 0) !important;
 }
 
 table {
@@ -6959,7 +6956,7 @@ table {
 
 table td,
 table th {
-  border: 1px solid #222;
+  border: 1px solid #000;
   padding: 8px;
 }
 

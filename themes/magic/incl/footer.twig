@@ -1,31 +1,23 @@
 <div class="container">
     <div class="footer">
         <div class="normal-box">
-            <h3 class="footer-h3">Settings</h3>
+            <h1 class="footer-h3">Settings</h1>
             {% for setting in pages["_meta"].meta.Settings %}
             <a href="{{ setting.url }}" title="{{ setting.title }}" role="button">
                 <i class="{{ setting.icon }}" aria-hidden="true"></i>
                 <span class="sr-only">{{ setting.title }}</span>
             </a>
             {% endfor %}
-            {# <ol>
-                <li><a href="http://validator.w3.org/check/referer">HTML Validator</a></li>
-                <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS Validator</a></li>
-            </ol> #}
         </div>
 
         <div class="social">
-            <h3 class="footer-h3">Contact</h3>
+            <h1 class="footer-h3">Contact</h1>
             <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
             {% for social in pages["_meta"].meta.social %}
             <a href="{{ social.url }}" title="{{ social.title }}" role="button">
                 <i class="{{ social.icon }}" aria-hidden="true"></i>
                 <span class="sr-only">{{ social.title }}</span>
             </a>
-            {# <a href="{{ social.url }}" title="{{ social.title }}" role="button">
-                <i class="fa fa-{{ social.icon }}" aria-hidden="true"></i>
-                <span class="sr-only">{{ social.title }}</span>
-            </a> #}
             {% endfor %}
         </div>
     </div>

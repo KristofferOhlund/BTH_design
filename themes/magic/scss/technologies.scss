@@ -29,7 +29,7 @@
 a,
 
 h1 {
-  color: $text-color;
+  color: $text-color; // INTE HÄR
   text-decoration: none;
 }
 
@@ -40,34 +40,34 @@ h1 {
 
 .css {
   grid-column: 1;
-  background-image: linear-gradient(to bottom right, $css-color, $css-color, $text-color);
+  background-image: linear-gradient(to bottom right, $css-color, $css-color, $logo-white-color);
 }
 
 .html,
 .javascript {
   grid-column: span 2;
-  background-image: linear-gradient(to bottom right, $js-color, $js-color,$text-color);
+  background-image: linear-gradient(to bottom right, $js-color, $js-color, $logo-white-color);
 }
 
 .html {
-  background-image: linear-gradient(to bottom right, $html-color, $html-color,$text-color);
+  background-image: linear-gradient(to bottom right, $html-color, $html-color, $logo-white-color);
 }
 
 .python {
   grid-column: span 3;
   order: 1;
-  background-image: linear-gradient(to bottom right, $python-color, $python-color, $python-color, $text-color);
+  background-image: linear-gradient(to bottom right, $python-color, $python-color, $python-color, $logo-white-color);
 }
 
 .git {
   grid-column: span 2;
-  background-image: linear-gradient(to bottom right, $git-color, $git-color,$text-color);
+  background-image: linear-gradient(to bottom right, $git-color, $git-color, $logo-white-color);
 }
 
 .php {
-  background-image: linear-gradient(to bottom right, $php-color, $php-color,$text-color);
+  background-image: linear-gradient(to bottom right, $php-color, $php-color, $logo-white-color);
 }
 
 .sqlite {
-  background-image: linear-gradient(to bottom right, $sqlite-color, $sqlite-color,$text-color);
+  background-image: linear-gradient(to bottom right, $sqlite-color, $sqlite-color, $logo-white-color);
 }
