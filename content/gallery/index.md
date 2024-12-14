@@ -28,5 +28,3 @@ Images:
     - title: norway12
       url: norway12.jpeg
 ---
-
-# Gallery - My Trip To Norway

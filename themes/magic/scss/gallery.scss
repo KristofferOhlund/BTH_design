@@ -6,34 +6,38 @@ video {
 }
 
 .gallery-container {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   gap: 15px;
-  margin: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-content: center;
-  justify-content: center;
+  justify-items: center;
 }
 
-.gallery-container > * {
-  justify-self: center;
-  align-self: center;
+.gallery-header {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3)
 }
 
 .gallery-img {
-  border-radius: 10px;
-  box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.3)
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.3)
 }
 
-.gallery-article {
-  text-align: left;
+.test-box {
+  background-color: red;
+  width: 200px;
+  height: 200px;
 }
 
 .embed-container {
   position: relative;
+  margin: 0 auto;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 900px;
   margin-top: 2em;
 }
 

@@ -4,20 +4,22 @@
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
-        <div class="gallery-article"> 
-            {{content}}
+        {# <div class="gallery-article">  #}
+            <h1 class="gallery-header">My Norway Gallery</h1>
             <div class="gallery-container">
                 {% for image in meta.Images %}
                 <a href="{{ assets_url }}/img/{{ image.url}}">
-                    <picture class="gallery-picture shadow">
-                            <source media="(min-width: 668px)" srcset="image/{{image.url}}?w=30%&%=90">
-                            <source media="(min-width: 368px)" srcset="image/{{image.url}}?w=20%&q=90">
+                    {# <div class="test-box child"></div> #}
+
+                    <picture class="gallery-picture">
+                            <source media="(min-width: 668px)" srcset="image/{{image.url}}?w=300&h=200&crop-to-fit">
+                            <source media="(min-width: 368px)" srcset="image/{{image.url}}?w=300&h=200&crop-to-fit">
                             <img class="gallery-img" src="image/{{image.url}}" alt="{{image.title}}">
                     </picture>
                 </a>
                 {% endfor %}
             </div>
-        </div>
+        {# </div> #}
         <div class="embed-container">
             <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?si=BLwtOK_yjvqanL53"
                 title="YouTube video player" frameborder="0"></iframe>
